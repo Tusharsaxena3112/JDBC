@@ -33,7 +33,7 @@ public class Employee{
     }
 
 
-    public int getEmployee_id(){
+    public int getEmployeeId() {
         return employee_id;
     }
 
@@ -43,7 +43,7 @@ public class Employee{
     }
 
     public String toString() {
-        return String.format("Employee Name :%s\n Employee ID : %d \n Employee Salary : %f", getEmployeeName(), getEmployee_id(), getEmployeeSalary());
+        return String.format("Employee Name :%s\n Employee ID : %d \n Employee Salary : %f", getEmployeeName(), getEmployeeId(), getEmployeeSalary());
     }
 
 
