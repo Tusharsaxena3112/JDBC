@@ -4,6 +4,12 @@ public class Employee{
     public String employeeName;
     public int employee_id;
     private double employeeSalary;
+
+    public Employee() {
+        this.employeeSalary = 0;
+        this.employee_id = 0;
+        this.employeeName = "0";
+    }
      public Employee(String employeeName, int employee_id ,double employeeSalary){
          this.employee_id =employee_id;
          this.employeeName =employeeName;
