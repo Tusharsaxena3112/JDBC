@@ -22,4 +22,6 @@ public class EmployeeCRUD {
         return employee.getEmployeeSalary();
     }
 
+    //UPDATE part......
+
 }
