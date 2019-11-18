@@ -1,4 +1,4 @@
-package jdbc;
+package employee;
 
 public class Employee{
     public String employeeName;
