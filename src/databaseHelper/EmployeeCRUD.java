@@ -5,6 +5,8 @@ import employee.Employee;
 public class EmployeeCRUD {
     private Employee employee;
 
+    //CREATE part....
+
     public Employee createEmployee(int employee_Id, double employeeSalary, String employeeName) {
         return employee = new Employee(employeeName, employee_Id, employeeSalary);
     }
