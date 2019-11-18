@@ -36,5 +36,9 @@ public class Employee{
         return employeeSalary;
     }
 
+    public String toString() {
+        return String.format("%s%s", getEmployeeName(), getEmployee_id());
+    }
+
 
 }
