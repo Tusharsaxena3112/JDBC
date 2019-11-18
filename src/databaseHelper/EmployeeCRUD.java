@@ -5,7 +5,7 @@ import employee.Employee;
 public class EmployeeCRUD {
     private Employee employee;
 
-    //CREATE part....
+    //CREATE part....̥
 
     public Employee createEmployee(int employee_Id, double employeeSalary, String employeeName) {
         return employee = new Employee(employeeName, employee_Id, employeeSalary);
@@ -36,4 +36,12 @@ public class EmployeeCRUD {
     public void setEmployeeSalary(double employeeSalary) {
         this.employee.setEmployeeSalary(employeeSalary);
     }
+
+    //DELETE part...
+    public boolean deleteEmployee(Employee employee) {
+        // Delete Employee
+        return false;
+    }
+
+
 }
