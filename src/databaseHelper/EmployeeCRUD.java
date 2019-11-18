@@ -9,8 +9,17 @@ public class EmployeeCRUD {
         return employee = new Employee(employeeName, employee_Id, employeeSalary);
     }
 
+    //READ part.........
     public int getEmployeeID() {
         return employee.getEmployeeId();
+    }
+
+    public String getEmployeeName() {
+        return employee.getEmployeeName();
+    }
+
+    public double getEmployeeSalary() {
+        return employee.getEmployeeSalary();
     }
 
 }
