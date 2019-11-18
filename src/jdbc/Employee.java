@@ -6,9 +6,9 @@ public class Employee{
     private double employeeSalary;
 
     public Employee() {
-        this.employeeSalary = 0;
+        this.employeeSalary = 100_00_00;
         this.employee_id = 0;
-        this.employeeName = "0";
+        this.employeeName = "Fluffy";
     }
      public Employee(String employeeName, int employee_id ,double employeeSalary){
          this.employee_id =employee_id;
@@ -43,7 +43,7 @@ public class Employee{
     }
 
     public String toString() {
-        return String.format("%s%s", getEmployeeName(), getEmployee_id());
+        return String.format("Employee Name :%s\n Employee ID : %d \n Employee Salary : %f", getEmployeeName(), getEmployee_id(), getEmployeeSalary());
     }
 
 
