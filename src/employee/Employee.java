@@ -24,7 +24,7 @@ public class Employee{
          this.employee_id =employee_id;
      }
 
-    public void setEmployeeSalary(int employeeSalary){
+    public void setEmployeeSalary(double employeeSalary) {
         this.employeeSalary =employeeSalary;
     }
 

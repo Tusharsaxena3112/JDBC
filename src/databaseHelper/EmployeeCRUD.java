@@ -23,5 +23,15 @@ public class EmployeeCRUD {
     }
 
     //UPDATE part......
+    public void setEmployeeID(int employee_id) {
+        this.employee.setEmployee_id(employee_id);
+    }
 
+    public void setEmployeeName(String employeeName) {
+        this.employee.setEmployeeName(employeeName);
+    }
+
+    public void setEmployeeSalary(double employeeSalary) {
+        this.employee.setEmployeeSalary(employeeSalary);
+    }
 }
