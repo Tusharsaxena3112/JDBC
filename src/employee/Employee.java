@@ -46,5 +46,14 @@ public class Employee{
         return String.format("Employee Name :%s\n Employee ID : %d \n Employee Salary : %f", getEmployeeName(), getEmployeeId(), getEmployeeSalary());
     }
 
+    //ODBC ==> open database connectivity
+    //Type 3 driver
 
+    //Steps -->
+//    1 Load the driver class using Class.forName() method
+//    2 . Describe the Url
+//
+//    3.Describe the userName and password
+//    name ->"root" - password->""
+//    4.Create a connection object
 }
