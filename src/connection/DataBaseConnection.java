@@ -13,11 +13,20 @@ public class DataBaseConnection {
 
     public boolean attemptConnection() throws SQLException {
         boolean isConnected = false;
-        connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/test", "root", "");
+        connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/test?useLegacyDatetimeCode=false&serverTimezone=UTC", "root", "");
         if (connection != null) {
             isConnected = true;
         }
         return isConnected;
+    }
+
+    public boolean closeConnection() throws SQLException {
+        boolean isConnectionClosed = false;
+        if (getConnection() != null) {
+            getConnection().close();
+            isConnectionClosed = true;
+        }
+        return isConnectionClosed;
     }
 
 }
