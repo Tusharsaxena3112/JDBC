@@ -14,4 +14,24 @@ public class Courses {
         this.courseID = courseID;
         this.courseName = courseName;
     }
+
+    public String getCourseName() {
+        return courseName;
+    }
+
+    public String getCourseCode() {
+        return courseCode;
+    }
+
+    public int getCourseID() {
+        return courseID;
+    }
+
+    public int getCourseDuration() {
+        return courseDuration;
+    }
+
+    public double getCourseCost() {
+        return courseCost;
+    }
 }
