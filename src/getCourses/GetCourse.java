@@ -10,7 +10,7 @@ public class GetCourse {
         Statement statement = connection.createStatement();
         ResultSet resultSet = statement.executeQuery("SELECT * FROM courses");
         while (resultSet.next()) {
-            System.out.printf("%d\t\t%s\t\t%s\t\t%d\t\t%f", resultSet.getInt("couseID"),
+            System.out.printf("%d\t\t%s\t\t%s\t\t%d\t\t%f\n", resultSet.getInt("courseID"),
                     resultSet.getString("courseName"),
                     resultSet.getString("courseCode"),
                     resultSet.getInt("courseDuration"),
