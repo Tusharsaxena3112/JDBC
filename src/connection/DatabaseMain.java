@@ -1,5 +1,6 @@
 package connection;
 
+import courseSelector.CourseSelector;
 import getCourses.GetCourse;
 import insertCourse.InsertCourse;
 
@@ -10,13 +11,14 @@ public class DatabaseMain {
         DataBaseConnection db = new DataBaseConnection();
         InsertCourse insertCourse = new InsertCourse();
         GetCourse getCourse = new GetCourse();
-        System.out.println(db.attemptConnection());
+        CourseSelector courseSelector = new CourseSelector();
+//        System.out.println(db.attemptConnection());
 
 //        if (insertCourse.addNewCourseInDatabase(DataBaseConnection.getConnection())) {
 //            System.out.println("SuccessFully Inserted...");
 //        }
-        getCourse.getCourse(DataBaseConnection.getConnection());
-
+//        getCourse.getCourse(DataBaseConnection.getConnection());
+        courseSelector.selectCourse(DataBaseConnection.getConnection());
 
     }
 
